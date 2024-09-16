@@ -52,11 +52,11 @@ public class Driver {
     public static int[] getInput(Scanner scanner) {
         String intro =
                 """
-                        Please enter the number of dice to roll, how many sides the dice have,
-                        and how many rolls to complete, separating the values by a space.
-                        Example: "2 6 1000"
-                        
-                        Enter configuration:""";
+                    Please enter the number of dice to roll, how many sides the dice have,
+                    and how many rolls to complete, separating the values by a space.
+                    Example: "2 6 1000"
+                    
+                    Enter configuration:""";
         int[] output = new int[3];
 
         boolean isValid = false;
@@ -128,7 +128,6 @@ public class Driver {
      * @param results data to be formatted
      * @param numDice number of dice that were rolled
      */
-    @SuppressWarnings("checkstyle:MagicNumber")
     public static void report(int[] results, int numDice) {
         int centerOffset = 3;
         int maxValue = findMax(results);
@@ -151,7 +150,6 @@ public class Driver {
      * @param num the number to have digits counted
      * @return number of digits
      */
-    @SuppressWarnings("checkstyle:MagicNumber")
     public static int countDigits(int num) {
         int count = 0;
         while (num != 0) {
